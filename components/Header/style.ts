@@ -18,10 +18,11 @@ export const Logo = styled(Image)`
     width: 65%;
     height: auto;
     margin-top: auto;
+    align-self: center;
     margin-bottom: auto;
 
     @media screen and (min-width: 900px) {
-        width: 11.7%;
+        width: 15%;
         align-self: flex-start;
     }
 `
