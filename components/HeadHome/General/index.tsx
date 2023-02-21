@@ -7,6 +7,8 @@ function General() {
     return (
         <Head>
             <title>{general.title}</title>
+            <meta name="robots" content={general.robots}/>
+            <meta name="rating" content={general.rating}/>
             <meta name="author" content={general.author}/>
             <meta name="creator" content={general.creator}/>
             <link rel="canonical" href={general.canonical}/>

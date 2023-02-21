@@ -23,6 +23,8 @@ interface ITwitter {
 interface IGeneral {
     title: string
     author: string
+    rating: string
+    robots: string
     creator: string
     keywords: string
     fbAdmins: string

@@ -5,6 +5,8 @@ function useGeneral(): IGeneral {
     const theme = useTheme()
 
     const general: IGeneral = {
+        robots: 'all',
+        rating: 'general',
         fbAdmins: 'josival.penha',
         themeColor: theme.backgroundColor,
         canonical: process.env.NEXT_PUBLIC_DOMAIN,
