@@ -1,0 +1,28 @@
+{
+  "name": "josival-penha",
+  "description": "Josival Penha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Miguel Penha <miguel.penha1@gmail.com> (https://portfolio-miguelpenha.vercel.app)",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/next": "^9.0.0",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26"
+  }
+}
