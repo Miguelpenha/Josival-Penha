@@ -39,7 +39,7 @@ export const NavBar = styled.nav`
 `
 
 interface IOption {
-    select?: boolean
+    select?: string
 }
 
 export const Option = styled(Link)<IOption>`

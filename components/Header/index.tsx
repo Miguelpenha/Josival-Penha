@@ -6,7 +6,7 @@ function Header() {
         <Container>
             <Logo src={logoJP} alt="Logo Josival Penha"/>
             <NavBar>
-                <Option href="/" select>Início</Option>
+                <Option href="/" select="true">Início</Option>
                 <Option href="/">Blog</Option>
                 <Option href="/" target="_blank" rel="external nofollow noreferrer">Portal</Option>
                 <Option href="https://www.granderecife.pe.gov.br/carteira-de-estudante/" target="_blank" rel="external nofollow">Carteira de Estudante</Option>
