@@ -2,6 +2,25 @@ import { useEffect } from 'react'
 import reveal from '../components/reveal'
 import Head from 'next/head'
 import Script from 'next/script'
+import Image from 'next/image'
+import logoJP from '../public/img/Logo Josival Penha.svg'
+import photoMain from '../public/img/photos/Photo-Principal.webp'
+import photoAnimation from '../public/img/Photo-Animation.webp'
+import iconWhatsapp from '../public/img/icons/whatsapp.svg'
+import photoObjectiveMain from '../public/img/photos/Photo-Main.png'
+import wavesBackground from '../public/img/Waves Background.svg'
+import photo1 from '../public/img/photos/Photo-1.png'
+import photo2 from '../public/img/photos/Photo-2.png'
+import photo3 from '../public/img/photos/Photo-3.jpg'
+import photo4 from '../public/img/photos/Photo-4.jpg'
+import photo5 from '../public/img/photos/Photo-5.jpg'
+import photo6 from '../public/img/photos/Photo-6.jpg'
+import photo7 from '../public/img/photos/Photo-7.jpg'
+import photo8 from '../public/img/photos/Photo-8.jpg'
+import artsBackground from '../public/img/Arts Background.svg'
+import logoFacebook from '../public/img/icons/Facebook-logo.svg'
+import logoInstagram from '../public/img/icons/Instagram-logo.svg'
+import logoYoutube from '../public/img/icons/Youtube-logo.svg'
 
 function Home() {
     useEffect(() => window.addEventListener('scroll', reveal), [])
@@ -53,13 +72,13 @@ function Home() {
         height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe></noscript>
         {/* End Google Tag Manager (noscript) */}
         <header>
-            <img src="img/Logo Josival Penha.svg" alt="Logo Josival Penha"/>
+            <Image src={logoJP} alt="Logo Josival Penha"/>
         </header>
         <main>
             <section className="principal">
                 <div className="container-photo">
-                    <img className="photo" src="img/photos/Photo-Principal.webp" alt="Foto de alunos do Josival Penha"/>
-                    <img className="photo-animation" src="img/Photo-Animation.webp" alt="Animação para a foto dos alunos"/>
+                    <Image src={photoMain} className="photo" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photoAnimation} className="photo-animation" alt="Animação para a foto dos alunos"/>
                 </div>
                 <div className="container-description">
                     <span className="label">Seja bem vindo(a) ao Josival Penha, sua escola em Paulista! &#x1F44B;</span>
@@ -105,12 +124,12 @@ function Home() {
             </section>
             <section className="objective">
                 <a href="https://api.whatsapp.com/send?phone=558141091419" className="button-whatsapp">
-                    <img src="img/icons/whatsapp.svg" alt="Ícone do whatsApp"/>
+                    <Image src={iconWhatsapp} alt="Ícone do whatsApp"/>
                     <span>FALE AGORA PELO 
                         WHATSAPP</span>
                 </a>
-                <img className="photo" src="img/photos/Photo-Main.png" alt="Fundo de ondas"/>
-                <img className="background" src="img/Waves Background.svg" alt="Fundo de ondas"/>
+                <Image src={photoObjectiveMain} className="photo" alt="Foto principal"/>
+                <Image src={wavesBackground} className="background" alt="Fundo de ondas"/>
                 <div className="container-description">
                     <h2 className="title">Educação completa para o seu filho.</h2>
                     <span className="description">
@@ -125,7 +144,7 @@ function Home() {
                 <div className="container-objetives">
                     <div className="objetive">
                         <div className="container-photo show">
-                            <img className="photo show" src="img/photos/Photo-1.png" alt="Foto de alunos do Josival Penha"/>
+                            <Image src={photo1} className="photo show" alt="Foto de alunos do Josival Penha"/>
                             <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M0 0h24v24H0V0z" fill="none"/>
                                 <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/>
@@ -170,7 +189,7 @@ function Home() {
                     </div>
                     <div className="objetive">
                         <div className="container-photo show">
-                            <img className="photo show" src="img/photos/Photo-2.png" alt="Foto de alunos do Josival Penha"/>
+                            <Image src={photo2} className="photo show" alt="Foto de alunos do Josival Penha"/>
                             <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M0 0h24v24H0V0z" fill="none"/>
                                 <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/>
@@ -250,16 +269,16 @@ function Home() {
             <section className="gallery">
                 <h2 className="title">FORMAÇÃO INTELECTUAL E HUMANA EM VIVÊNCIAS QUE <span className="highlighted">SÓ NOSSOS ALUNOS CONHECEM</span></h2>
                 <div className="photos">
-                    <img className="show" src="img/photos/Photo-3.jpg" alt="Foto de alunos do Josival Penha"/>
-                    <img className="show" src="img/photos/Photo-4.jpg" alt="Foto de alunos do Josival Penha"/>
-                    <img className="show" src="img/photos/Photo-5.jpg" alt="Foto de alunos do Josival Penha"/>
-                    <img className="show" src="img/photos/Photo-6.jpg" alt="Foto de alunos do Josival Penha"/>
-                    <img className="show" src="img/photos/Photo-7.jpg" alt="Foto de alunos do Josival Penha"/>
-                    <img className="show" src="img/photos/Photo-8.jpg" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo3} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo4} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo5} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo6} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo7} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image src={photo8} className="show" alt="Foto de alunos do Josival Penha"/>
                 </div>
             </section>
             <section className="opportunity">
-                <img src="img/Arts Background.svg" alt="Fundo com artes"/>
+                <Image src={artsBackground} alt="Fundo com artes"/>
                 <h2 className="title">EDUCAÇÃO DE VALOR</h2>
                 <span className="description">Não perca a oportunidade de proporcionar ao seu filho experiências e vivências de uma educação inovadora, que visa o desenvolvimento emocional e de alta performance acadêmica.</span>
                 <a href="https://api.whatsapp.com/send?phone=558141091419" className="button">agendar uma visita</a>
@@ -268,15 +287,15 @@ function Home() {
         </main>
         <footer>
             <div className="social">
-                <img className="logo" src="img/icons/Facebook-logo.svg" alt="Logo Facebook"/>
-                <img className="logo" src="img/icons/Instagram-logo.svg" alt="Logo Instagram"/>
-                <img className="logo" src="img/icons/Youtube-logo.svg" alt="Logo Youtube"/>
+                <Image src={logoFacebook} className="logo" alt="Logo Facebook"/>
+                <Image src={logoInstagram} className="logo" alt="Logo Instagram"/>
+                <Image src={logoYoutube} className="logo" alt="Logo Youtube"/>
             </div>
             <div className="message">
                 <h3>O CUIDADO E CARINHO QUE SEU FILHO MERECE</h3>
             </div>
             <div className="rights">
-                <img className="logo" src="img/Logo Josival Penha.svg" alt="Logo Josival Penha"/>
+                <Image src={logoJP} className="logo" alt="Logo Josival Penha"/>
                 <h3 className="text">2022 © Todos os direitos reservados</h3>
             </div>
         </footer>

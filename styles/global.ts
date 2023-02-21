@@ -77,8 +77,14 @@ export default createGlobalStyle`
         position: relative;
     }
 
+    main>.principal>.container-photo>.photo {
+        width: 100%;
+        height: auto;
+    }
+
     main>.principal>.container-photo>.photo-animation {
         width: 100%;
+        height: auto;
         position: absolute;
         transform: scale(1.1);
         animation: photoScale 5s linear infinite;
@@ -168,6 +174,7 @@ export default createGlobalStyle`
     main>.objective>.photo {
         width: 70%;
         z-index: -1;
+        height: auto;
         margin-top: 10%;
         align-self: center;
     }
@@ -175,6 +182,7 @@ export default createGlobalStyle`
     main>.objective>.background {
         width: 100%;
         z-index: -1;
+        height: auto;
         margin-top: 114%;
         position: absolute;
     }
@@ -237,6 +245,7 @@ export default createGlobalStyle`
 
     main>.objectives>.container-objetives>.objetive>.container-photo>.photo {
         width: 100%;
+        height: auto;
     }
 
     main>.objectives>.container-objetives>.objetive>.container-photo>.icon {
@@ -593,6 +602,7 @@ export default createGlobalStyle`
     main>.opportunity>img {
         width: 100%;
         z-index: -1;
+        height: auto;
         position: absolute;
         background-color: #F2F2F2;
     }
@@ -660,6 +670,7 @@ export default createGlobalStyle`
 
     footer>.social>.logo {
         width: 7vw;
+        height: auto;
     }
 
     footer>.message {
