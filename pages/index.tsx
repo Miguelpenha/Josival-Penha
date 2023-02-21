@@ -264,7 +264,7 @@ function Home() {
                 <span className="description">Não perca a oportunidade de proporcionar ao seu filho experiências e vivências de uma educação inovadora, que visa o desenvolvimento emocional e de alta performance acadêmica.</span>
                 <a href="https://api.whatsapp.com/send?phone=558141091419" className="button">agendar uma visita</a>
             </section>
-            <div className="mapouter"><div className="gmap_canvas"><iframe title="Google Maps" width="100%" height="400vh" id="gmap_canvas" src="https://maps.google.com/maps?q=Instituto%20Educacional%20Josival%20Penha&t=&z=16&ie=UTF8&iwloc=&output=embed" scrolling="no"></iframe></div></div>
+            <div className="mapouter"><div className="gmap_canvas"><iframe title="Google Maps" width="100%" height="400vh" id="gmap_canvas" src="https://maps.google.com/maps?q=Instituto%20Educacional%20Josival%20Penha&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe></div></div>
         </main>
         <footer>
             <div className="social">
