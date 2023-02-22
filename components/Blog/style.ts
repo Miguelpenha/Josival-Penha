@@ -1,14 +1,16 @@
 import styled from 'styled-components'
-import ImageRaw from 'next/image'
 import Link from 'next/link'
+import ImageRaw from 'next/image'
 
-export const Container = styled.div`
+export const Container = styled(Link)`
     width: 17em;
     margin-bottom: 2em;
     align-self: center;
+    text-decoration: none;
 
     @media screen and (min-width: 900px) {
-        margin-right: 4em;
+        margin-left: 2em;
+        margin-right: 2em;
     }
 `
 
