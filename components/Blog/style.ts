@@ -25,7 +25,7 @@ export const Title = styled.h2`
     margin-top: 0.5em;
 `
 
-export const More = styled(Link)`
+export const More = styled.span`
     display: flex;
     margin-top: 1em;
     width: fit-content;

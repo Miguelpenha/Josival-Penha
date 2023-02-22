@@ -13,7 +13,7 @@ const Blog: FC<IProps> = ({ image, title, slug }) => {
         <Container href={slug}>
             <Image priority src={image} alt=""/>
             <Title>{title}</Title>
-            <More href={slug}>Ler o post</More>
+            <More>Ler o post</More>
         </Container>
     )
 }

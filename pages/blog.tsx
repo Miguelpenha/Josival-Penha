@@ -9,7 +9,7 @@ function Blog() {
     return (
         <>
             <HeadBlog/>
-            <Header page="blog" priorityLogo/>
+            <Header page="blog"/>
             <Container>
                 <Title>NOVIDADES JOSIVAL PENHA</Title>
                 <BlogList>
