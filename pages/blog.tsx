@@ -2,7 +2,7 @@ import HeadGeneral from '../components/HeadGeneral'
 import Header from '../components/Header'
 import { Container, Title, BlogList } from '../styles/pages/blog'
 import BlogComponent from '../components/Blog'
-import photo1 from '../public/img/blog/photo 1.png'
+import photo1 from '../public/img/blog/Photo 1.png'
 import Footer from '../components/Footer'
 
 function Blog() {
