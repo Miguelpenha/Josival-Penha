@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <div className="rights">
                 <Image src={logoJP} className="logo" alt="Logo Josival Penha"/>
-                <h3 className="text">2022 © Todos os direitos reservados</h3>
+                <h3 className="text">2023 © Todos os direitos reservados</h3>
             </div>
         </Container>
     )

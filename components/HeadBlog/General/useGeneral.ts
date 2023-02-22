@@ -13,10 +13,10 @@ function useGeneral(): IGeneral {
         copyright: '© 2023 Instituto Educacional Josival Penha',
         author: 'Instituto Educacional Josival Penha - Paulista',
         creator: 'Instituto Educacional Josival Penha - Paulista',
+        description: 'Blog do Instituto Educacional Josival Penha',
         publisher: 'Instituto Educacional Josival Penha - Paulista',
-        title: 'Instituto Educacional Josival Penha - Escola em Mirueira',
-        keywords: 'escola em mirueira, escola em paulista, melhores escolas em paulista, escolar particular em paulista',
-        description: 'O Instituto Educacional Josival Penha oferece educação de qualidade com valores sólidos e educação cristã. Agende uma visita e confira por que somos uma das melhores escolas em Paulista.'
+        title: 'Blog Instituto Educacional Josival Penha - Escola em Mirueira',
+        keywords: 'blog, escola em mirueira, escola em paulista, melhores escolas em paulista, escolar particular em paulista'
     }
 
     return general
