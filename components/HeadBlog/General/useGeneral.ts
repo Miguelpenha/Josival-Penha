@@ -9,7 +9,7 @@ function useGeneral(): IGeneral {
         rating: 'general',
         fbAdmins: 'josival.penha',
         themeColor: theme.backgroundColor,
-        canonical: process.env.NEXT_PUBLIC_DOMAIN,
+        canonical: `${process.env.NEXT_PUBLIC_DOMAIN}/blog`,
         copyright: '© 2023 Instituto Educacional Josival Penha',
         author: 'Instituto Educacional Josival Penha - Paulista',
         creator: 'Instituto Educacional Josival Penha - Paulista',
