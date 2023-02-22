@@ -51,9 +51,9 @@ export const Option = styled(Link)<IOption>`
     transition-duration: 0.2s;
     transition-timing-function: linear;
     color: ${props => props.theme.backgroundColor};
-    border-bottom: 2px solid ${props => props.select ? props.theme.backgroundColor : 'transparent'};
+    border-bottom: 2px solid ${props => props.select === 'true' ? props.theme.backgroundColor : 'transparent'};
 
-    ${props => props.select && css`
+    ${props => props.select === 'true' && css`
         font-weight: bold;
     `}
 

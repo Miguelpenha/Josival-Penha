@@ -12,7 +12,7 @@ function Home() {
     return <>
         <HeadHome/>
         <GoogleTagManager/>
-        <Header/>
+        <Header page="home"/>
         <ContentHome/>
         <Footer/>
     </>

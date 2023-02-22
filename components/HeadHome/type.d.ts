@@ -4,14 +4,6 @@ interface IGeo {
     placename: string
 }
 
-interface IIcon {
-    icon32: string
-    icon48: string
-    icon96: string
-    icon144: string
-    shortcut: string
-}
-
 interface ITwitter {
     url: string
     card: string
@@ -46,7 +38,6 @@ interface IOpenGraph {
 
 export {
     IGeo,
-    IIcon,
     ITwitter,
     IGeneral,
     IOpenGraph

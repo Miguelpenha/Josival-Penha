@@ -20,8 +20,8 @@ function ContentHome() {
         <Container>
             <section className="principal">
                 <div className="container-photo">
-                    <Image src={photoMain} className="photo" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photoAnimation} className="photo-animation" alt="Animação para a foto dos alunos"/>
+                    <Image priority src={photoMain} className="photo" alt="Foto de alunos do Josival Penha"/>
+                    <Image priority src={photoAnimation} className="photo-animation" alt="Animação para a foto dos alunos"/>
                 </div>
                 <div className="container-description">
                     <span className="label">Seja bem vindo(a) ao Josival Penha, sua escola em Paulista! &#x1F44B;</span>
