@@ -9,7 +9,7 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         font-family: 'Raleway', sans-serif;
         color: ${props => props.theme.color};
-        scrollbar-color: ${props => props.theme.primary} ${props => props.theme.secondary};
+        scrollbar-color: ${props => props.theme.primary} ${props => props.theme.colorSecondary};
     }
 
     *::-webkit-scrollbar {
@@ -17,7 +17,7 @@ export default createGlobalStyle`
     }
 
     *::-webkit-scrollbar-track {
-        background: ${props => props.theme.secondary};
+        background: ${props => props.theme.colorSecondary};
     }
 
     *::-webkit-scrollbar-thumb {

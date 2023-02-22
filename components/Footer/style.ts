@@ -5,8 +5,8 @@ export const Container = styled.footer`
         display: flex;
         padding: 6% 25%;
         flex-direction: row;
-        background-color: #0094d4;
         justify-content: space-evenly;
+        background-color: ${props => props.theme.primary};
     }
 
     .social>.logo {
@@ -21,7 +21,7 @@ export const Container = styled.footer`
     .rights {
         padding: 8%;
         display: flex;
-        background-color: #ED3237;
+        background-color: ${props => props.theme.backgroundColorSecondary};
     }
 
     .rights>.logo {
@@ -33,9 +33,9 @@ export const Container = styled.footer`
     .rights>.text {
         margin-top: 8%;
         font-size: 2.8vw;
-        color: #FEFEFE;
         font-weight: 600;
         align-self: center;
+        color: ${props => props.theme.colorSecondary};
     }
 
     @media screen and (min-width: 900px) {
@@ -50,14 +50,14 @@ export const Container = styled.footer`
         .message {
             padding: 4%;
             display: block;
-            background-color: #ED3237;
+            background-color: ${props => props.theme.backgroundColorSecondary};
         }
         
         .message>h3 {
-            color: #FEFEFE;
             font-size: 2.2rem;
             font-weight: bold;
             text-align: center;
+            color: ${props => props.theme.colorSecondary};
         }
 
         .rights {

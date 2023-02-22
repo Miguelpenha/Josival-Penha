@@ -56,7 +56,7 @@ export const Container = styled.main`
     }
 
     .principal>.container-description>.title {
-        color: #2F2F2F;
+        color: ${props => props.theme.color};
         font-weight: 900;
         font-size: 2.51rem;
     }
@@ -64,7 +64,7 @@ export const Container = styled.main`
     .principal>.container-description>.description {
         display: flex;
         margin-top: 6%;
-        color: #403F3F;
+        color: ${props => props.theme.color};
         font-weight: 600;
         font-size: 1.27rem;
     }
@@ -98,7 +98,7 @@ export const Container = styled.main`
     }
 
     .objective>.button-whatsapp:hover {
-        background-color: #07aa71;
+        filter: brightness(0.9);
     }
 
     .objective>.button-whatsapp>img {
@@ -108,7 +108,7 @@ export const Container = styled.main`
 
     .objective>.button-whatsapp>span {
         font-size: 4vw;
-        color: #FFFFFF;
+        color: ${props => props.theme.backgroundColor};
         padding-left: 5%;
         font-weight: bold;
     }
@@ -136,7 +136,7 @@ export const Container = styled.main`
 
     .objective>.container-description>.title {
         width: 85%;
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-weight: bold;
         font-size: 1.89rem;
         text-align: center;
@@ -146,7 +146,7 @@ export const Container = styled.main`
     .objective>.container-description>.description, .objective>.container-description>.description>* {
         width: 85%;
         margin-top: 5%;
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-size: 1.09rem;
         align-self: center;
         text-align: center;
@@ -161,7 +161,7 @@ export const Container = styled.main`
         width: 100%;
         display: flex;
         align-self: center;
-        background-color: #F2F2F2;
+        background-color: ${props => props.theme.colorSecondary};
     }
 
     .objectives>.container-objetives {
@@ -196,11 +196,11 @@ export const Container = styled.main`
     }
 
     .objectives>.container-objetives>.objetive:nth-child(1)>.container-photo>.icon {
-        fill: #ED3237;
+        fill: ${props => props.theme.backgroundColorSecondary};
     }
 
     .objectives>.container-objetives>.objetive:nth-child(2)>.container-photo>.icon {
-        fill: #0094D4;
+        fill: ${props => props.theme.primary};
     }
 
     .objectives>.container-objetives>.objetive:nth-child(1)>.container-photo>.icon:nth-child(2) {
@@ -220,7 +220,7 @@ export const Container = styled.main`
     .objectives>.container-objetives>.objetive:nth-child(1)>.container-photo>.icon:nth-child(4) {
         top: 70%;
         left: -20%;
-        fill: #D1D1D1;
+        fill: ${props => props.theme.tertiary};
         transform: rotate(-5deg);
         animation: balance1 5s infinite;
     }
@@ -228,7 +228,7 @@ export const Container = styled.main`
     .objectives>.container-objetives>.objetive:nth-child(1)>.container-photo>.icon:nth-child(5) {
         top: 30%;
         right: -15%;
-        fill: #D1D1D1;
+        fill: ${props => props.theme.tertiary};
         transform: rotate(0deg);
         animation: balance2 5s infinite;
     }
@@ -303,7 +303,7 @@ export const Container = styled.main`
         top: 20%;
         left: 5%;
         width: 12%;
-        fill: #D1D1D1;
+        fill: ${props => props.theme.tertiary};
         transform: rotate(-15deg);
         animation: balanceStar 17s infinite linear;
     }
@@ -311,7 +311,7 @@ export const Container = styled.main`
     .objectives>.container-objetives>.objetive:nth-child(2)>.container-photo>.icon:nth-child(4) {
         top: 2%;
         right: -5%;
-        fill: #0094D4;
+        fill: ${props => props.theme.primary};
         animation: balanceStar 17s infinite linear;
     }
 
@@ -319,7 +319,7 @@ export const Container = styled.main`
         top: 25%;
         width: 14%;
         right: -8%;
-        fill: #0094D4;
+        fill: ${props => props.theme.primary};
         animation: balanceStar 17s infinite linear;
     }
 
@@ -327,7 +327,7 @@ export const Container = styled.main`
         top: 45%;
         width: 12%;
         right: -5%;
-        fill: #D1D1D1;
+        fill: ${props => props.theme.tertiary};
         animation: balanceStar 17s infinite linear;
     }
 
@@ -368,16 +368,16 @@ export const Container = styled.main`
 
     .objectives>.container-objetives>.objetive:nth-child(1)>.texts>.highlighted {
         top: -15%;
-        background-color: #ED3237;
+        background-color: ${props => props.theme.backgroundColorSecondary};
     }
 
     .objectives>.container-objetives>.objetive:nth-child(2)>.texts>.highlighted {
         top: -20%;
-        background-color: #0094D4;
+        background-color: ${props => props.theme.primary};
     }
 
     .objectives>.container-objetives>.objetive>.texts>.highlighted>.icon {
-        fill: #FFD600;
+        fill: ${props => props.theme.secondary};
         margin-left: auto;
     }
 
@@ -395,13 +395,13 @@ export const Container = styled.main`
     }
 
     .objectives>.container-objetives>.objetive>.texts>.highlighted>.texts>.text:nth-child(1) {
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-weight: 600;
         font-size: 1.15rem;
     }
 
     .objectives>.container-objetives>.objetive>.texts>.highlighted>.texts>.text:nth-child(2) {
-        color: #FFD600;
+        color: ${props => props.theme.secondary};
         font-size: 1.75rem;
         font-weight: bolder;
     }
@@ -412,7 +412,7 @@ export const Container = styled.main`
         padding: 4.5% 5%;
         margin-top: 10%;
         cursor: pointer;
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-size: 1.6rem;
         margin-bottom: 5%;
         font-weight: bold;
@@ -422,19 +422,19 @@ export const Container = styled.main`
         align-items: center;
         text-decoration: none;
         transition-duration: 0.1s;
-        background-color: #FFD600;
+        background-color: ${props => props.theme.secondary};
         transition-timing-function: linear;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .objectives>.button:hover {
-        background-color: #d4b20b;
+        filter: brightness(0.9);
     }
 
     .cards {
         width: 100%;
         display: none;
-        background-color: #F2F2F2;
+        background-color: ${props => props.theme.colorSecondary};
     }
 
     .cards>.list {
@@ -455,11 +455,11 @@ export const Container = styled.main`
         min-width: 13.13rem;
         border-radius: 10px;
         scroll-snap-align: center;
-        background-color: #0094d4;
+        background-color: ${props => props.theme.primary};
     }
 
     .cards>.list>.card>.title {
-        color: #FFD600;
+        color: ${props => props.theme.secondary};
         font-size: 1.4rem;
         text-align: center;
     }
@@ -467,14 +467,14 @@ export const Container = styled.main`
     .cards>.list>.card>.text {
         display: flex;
         margin-top: 10%;
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-size: 1rem;
     }
 
     .gallery {
         padding: 5%;
         display: flex;
-        background-color: #ED3237;
+        background-color: ${props => props.theme.backgroundColorSecondary};
     }
 
     .gallery>.title {
@@ -485,14 +485,14 @@ export const Container = styled.main`
     }
 
     .gallery>.title, .gallery>.title>* {
-        color: #FFFFFF;
+        color: ${props => props.theme.backgroundColor};
         font-weight: bold;
         font-size: 1.58rem;
         text-align: center;
     }
 
     .gallery>.title>.highlighted {
-        color: #FFD600;
+        color: ${props => props.theme.secondary};
     }
 
     .gallery>.photos {
@@ -521,15 +521,14 @@ export const Container = styled.main`
     .gallery>.photos>img:hover {
         transform: scale(1.05);
         filter: brightness(0.8);
-        background-color: rgb(135, 20, 24);
         animation: floatImage 1s infinite linear;
-        box-shadow: 0 5px 15px rgb(135 20 24 / 50%);
+        box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
     }
 
     @keyframes floatImage {
         50% {
             transform: scale(1);
-            box-shadow: 0 5px 15px rgb(135 20 24 / 80%);
+            box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
         }
 
         100% {
@@ -546,12 +545,12 @@ export const Container = styled.main`
         z-index: -1;
         height: auto;
         position: absolute;
-        background-color: #F2F2F2;
+        background-color: ${props => props.theme.colorSecondary};
     }
 
     .opportunity>.title {
         margin-top: 16%;
-        color: #0094D4;
+        color: ${props => props.theme.primary};
         font-weight: 900;
         font-size: 7.1vw;
         align-self: center;
@@ -560,7 +559,7 @@ export const Container = styled.main`
     .opportunity>.description {
         width: 85%;
         margin-top: 5%;
-        color: #2F2F2F;
+        color: ${props => props.theme.color};
         font-size: 4.2vw;
         font-weight: 600;
         text-align: center;
@@ -573,7 +572,7 @@ export const Container = styled.main`
         padding: 5%;
         margin-top: 10%;
         cursor: pointer;
-        color: #FEFEFE;
+        color: ${props => props.theme.colorSecondary};
         font-size: 5vw;
         margin-bottom: 5%;
         font-weight: bold;
@@ -582,12 +581,12 @@ export const Container = styled.main`
         align-items: center;
         text-decoration: none;
         transition-duration: 0.1s;
-        background-color: #ED3237;
+        background-color: ${props => props.theme.backgroundColorSecondary};
         transition-timing-function: linear;
     }
 
     .opportunity>.button:hover {
-        background-color: #c12429;
+        filter: brightness(0.9);
     }
 
     .mapouter {
@@ -626,8 +625,8 @@ export const Container = styled.main`
         .principal>.container-description>.label {
             display: flex;
             font-weight: 600;
-            color: #00AFEF;
             font-size: 1.25rem;
+            color: ${props => props.theme.primary};
         }
 
         .principal>.container-description>.title {
@@ -644,7 +643,7 @@ export const Container = styled.main`
             display: flex;
             margin-top: 8%;
             padding: 1vh 1vw;
-            color: #FEFEFE;
+            color: ${props => props.theme.colorSecondary};
             font-weight: 600;
             font-size: 1.25rem;
             align-self: center;
@@ -657,7 +656,7 @@ export const Container = styled.main`
             animation: showLeft 1s;
             justify-content: center;
             transition-duration: 0.1s;
-            background-color: #ED3237;
+            background-color: ${props => props.theme.backgroundColorSecondary};
             transition-timing-function: linear;
         }
 
@@ -674,12 +673,12 @@ export const Container = styled.main`
         }
 
         .principal>.container-description>.button:hover {
-            background-color: #c12429;
+            filter: brightness(0.9);
         }
 
         .principal>.container-description>.button>svg {
             width: 4vw;
-            fill: #FFD600;
+            fill: ${props => props.theme.secondary};
             margin-left: 5%;
         }
 
@@ -699,14 +698,14 @@ export const Container = styled.main`
             align-self: center;
             margin-bottom: 10%;
             border-radius: 20px;
-            background-color: #0094D4;
+            background-color: ${props => props.theme.primary};
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
         
         #form-contact>#form>.title {
             width: 85%;
             margin-top: 5%;
-            color: #FEFEFE;
+            color: ${props => props.theme.colorSecondary};
             font-weight: 800;
             font-size: 2.2rem;
             margin-bottom: 8%;
@@ -720,7 +719,7 @@ export const Container = styled.main`
         }
         
         #form-contact>#form>.field>label {
-            color: #FFFFFF;
+            color: ${props => props.theme.backgroundColor};
             font-weight: bold;
             margin-bottom: 2%;
             font-size: 1.03rem;
@@ -729,9 +728,9 @@ export const Container = styled.main`
         #form-contact>#form>.field>input {
             padding: 4%;
             border: none;
-            color: #0094D4;
             font-weight: bold;
             font-size: 1.12rem;
+            color: ${props => props.theme.primary};
         }
         
         #form-contact>#form>.field>input:focus {
@@ -744,18 +743,18 @@ export const Container = styled.main`
             padding: 6% 5%;
             margin-top: 10%;
             cursor: pointer;
-            color: #FEFEFE;
+            color: ${props => props.theme.colorSecondary};
             font-weight: bold;
             font-size: 1.61rem;
             border-radius: 20px;
             align-items: center;
             transition-duration: 0.1s;
-            background-color: #FFD600;
+            background-color: ${props => props.theme.secondary};
             transition-timing-function: linear;
         }
         
         #form-contact>#form>.button:hover {
-            background-color: #d4b20b;
+            filter: brightness(0.9);
         }
 
         .objective {
