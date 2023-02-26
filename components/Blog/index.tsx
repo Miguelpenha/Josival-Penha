@@ -1,18 +1,16 @@
-import { StaticImageData } from 'next/image'
+import IBlog from '../../types/blog'
 import { FC } from 'react'
 import { Container, Image, Title, More } from './style'
 
 interface IProps {
-    slug: string
-    title: string
-    image: StaticImageData
+    blog: IBlog
 }
 
-const Blog: FC<IProps> = ({ image, title, slug }) => {
+const Blog: FC<IProps> = ({ blog }) => {
     return (
-        <Container href={slug}>
-            <Image priority src={image} alt=""/>
-            <Title>{title}</Title>
+        <Container href={`blog/${blog.slug}`}>
+            <Image priority src={blog.image.src} alt={blog.image.alt}/>
+            <Title>{blog.title}</Title>
             <More>Ler o post</More>
         </Container>
     )
