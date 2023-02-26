@@ -1,4 +1,4 @@
-import HeadBlog from '../components/HeadBlog'
+import HeadBlogHome from '../components/HeadBlogHome'
 import Header from '../components/Header'
 import { Container, Title, BlogList } from '../styles/pages/blog'
 import BlogComponent from '../components/Blog'
@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 function Blog() {
     return (
         <>
-            <HeadBlog/>
+            <HeadBlogHome/>
             <Header page="blog"/>
             <Container>
                 <Title>NOVIDADES JOSIVAL PENHA</Title>
