@@ -5,17 +5,17 @@ function useGeneral(): IGeneral {
     const theme = useTheme()
 
     const general: IGeneral = {
-        robots: 'all',
         rating: 'general',
+        robots: 'index follow',
         fbAdmins: 'josival.penha',
         themeColor: theme.backgroundColor,
+        author: 'Instituto Educacional Josival Penha',
+        creator: 'Instituto Educacional Josival Penha',
+        publisher: 'Instituto Educacional Josival Penha',
         canonical: `${process.env.NEXT_PUBLIC_DOMAIN}/blog`,
+        title: 'Blog - Instituto Educacional Josival Penha',
         copyright: '© 2023 Instituto Educacional Josival Penha',
-        author: 'Instituto Educacional Josival Penha - Paulista',
-        creator: 'Instituto Educacional Josival Penha - Paulista',
         description: 'Blog do Instituto Educacional Josival Penha',
-        publisher: 'Instituto Educacional Josival Penha - Paulista',
-        title: 'Blog Instituto Educacional Josival Penha - Escola em Mirueira',
         keywords: 'blog, escola em mirueira, escola em paulista, melhores escolas em paulista, escolar particular em paulista'
     }
 

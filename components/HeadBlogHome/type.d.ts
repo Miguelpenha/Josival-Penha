@@ -4,6 +4,14 @@ interface IGeo {
     placename: string
 }
 
+interface ITwitter {
+    url: string
+    card: string
+    title: string
+    image: string
+    description: string
+}
+
 interface IGeneral {
     title: string
     author: string
@@ -16,6 +24,16 @@ interface IGeneral {
     publisher: string
     copyright: string
     themeColor: string
+    description: string
+}
+
+interface IOpenGraph {
+    url: string
+    type: string
+    title: string
+    image: string
+    locale: string
+    site_name: string
     description: string
 }
 

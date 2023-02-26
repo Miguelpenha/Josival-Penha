@@ -2,6 +2,7 @@ import { IOpenGraph } from '../type'
 
 const openGraph: IOpenGraph = {
     type: 'school',
+    locale: 'pt_BR',
     url: process.env.NEXT_PUBLIC_DOMAIN,
     site_name: 'Instituto Educacional Josival Penha',
     title: 'Instituto Educacional Josival Penha - Sua escola em Mirueira',

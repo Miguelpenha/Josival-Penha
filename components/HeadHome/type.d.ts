@@ -32,6 +32,7 @@ interface IOpenGraph {
     type: string
     title: string
     image: string
+    locale: string
     site_name: string
     description: string
 }
