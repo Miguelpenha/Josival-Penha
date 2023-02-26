@@ -3,7 +3,7 @@ import Twitter from './Twitter'
 import General from './General'
 import OpenGraph from './OpenGraph'
 
-function HeadBlog() {
+function HeadBlogHome() {
     return (
         <>
             <Geo/>
@@ -14,4 +14,4 @@ function HeadBlog() {
     )
 }
 
-export default HeadBlog
+export default HeadBlogHome

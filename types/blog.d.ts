@@ -7,6 +7,7 @@ interface IBlog {
     description: string
     image: {
         alt: string
+        name: string
         src: StaticImageData
     }
     author: {

@@ -10,7 +10,8 @@ const blogs: IBlog[] = [
         description: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica',
         image: {
             src: photoBlog1,
-            alt: 'Foto dos alunos Josival Penha'
+            alt: 'Foto dos alunos Josival Penha',
+            name: 'img/blog/Authors/Author 1.jpg'
         },
         author: {
             name: 'Norma Cristina',
