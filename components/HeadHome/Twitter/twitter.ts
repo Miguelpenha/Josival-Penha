@@ -1,7 +1,7 @@
 import { ITwitter } from '../type'
 
 const twitter: ITwitter = {
-    card: 'summary',
+    card: 'summary_large_image',
     url: process.env.NEXT_PUBLIC_DOMAIN,
     title: 'Instituto Educacional Josival Penha - Sua escola em Mirueira',
     image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/photos/Photo-Principal.webp`,
