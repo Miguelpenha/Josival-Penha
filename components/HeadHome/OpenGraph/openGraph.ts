@@ -5,8 +5,8 @@ const openGraph: IOpenGraph = {
     url: process.env.NEXT_PUBLIC_DOMAIN,
     site_name: 'Instituto Educacional Josival Penha',
     title: 'Instituto Educacional Josival Penha - Escola em Mirueira',
-    image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/Logo-Josival-Penha.png`,
-    description: 'O Instituto Educacional Josival Penha está preparado para as aulas em modelo presencial seguindo todos os protocolos recomendados pelo governo estadual'
+    image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/photos/Photo-Principal.webp`,
+    description: 'O Instituto Educacional Josival Penha oferece educação de qualidade com valores sólidos e educação cristã. Agende uma visita e confira por que somos uma das melhores escolas em Paulista.'
 }
 
 export default openGraph
