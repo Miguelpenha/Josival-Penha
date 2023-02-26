@@ -4,6 +4,14 @@ interface IGeo {
     placename: string
 }
 
+interface IArticle {
+    author: string
+    section: string
+    publisher: string
+    publishedTime: string
+    modifiedTime: string
+}
+
 interface ITwitter {
     url: string
     card: string
@@ -40,6 +48,7 @@ interface IOpenGraph {
 export {
     IGeo,
     ITwitter,
+    IArticle,
     IGeneral,
     IOpenGraph
 }

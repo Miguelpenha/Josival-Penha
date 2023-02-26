@@ -3,6 +3,7 @@ import { FC } from 'react'
 import Geo from './Geo'
 import Twitter from './Twitter'
 import General from './General'
+import Article from './Article'
 import OpenGraph from './OpenGraph'
 
 interface IProps {
@@ -15,6 +16,7 @@ const HeadBlog: FC<IProps> = ({ blog }) => {
             <Geo/>
             <Twitter blog={blog}/>
             <General blog={blog}/>
+            <Article blog={blog}/>
             <OpenGraph blog={blog}/>
         </>
     )
