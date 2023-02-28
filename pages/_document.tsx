@@ -1,6 +1,6 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import HeadGeneral from '../components/HeadGeneral'
+import GoogleFonts from '../components/GoogleFonts'
 
 export default class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="pt-BR">
                 <Head>
-                    <HeadGeneral/>
+                    <GoogleFonts/>
                 </Head>
                 <body>
                     <Main/>

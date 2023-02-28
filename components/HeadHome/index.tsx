@@ -1,4 +1,3 @@
-import Geo from './Geo'
 import Twitter from './Twitter'
 import General from './General'
 import OpenGraph from './OpenGraph'
@@ -6,7 +5,6 @@ import OpenGraph from './OpenGraph'
 function HeadHome() {
     return (
         <>
-            <Geo/>
             <Twitter/>
             <General/>
             <OpenGraph/>

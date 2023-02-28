@@ -1,3 +1,9 @@
+interface IGeo {
+    region: string
+    position: string
+    placename: string
+}
+
 interface IIcon {
     icon32: string
     icon48: string
@@ -7,5 +13,6 @@ interface IIcon {
 }
 
 export {
+    IGeo,
     IIcon
 }

@@ -1,9 +1,3 @@
-interface IGeo {
-    region: string
-    position: string
-    placename: string
-}
-
 interface ITwitter {
     url: string
     card: string

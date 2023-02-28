@@ -1,9 +1,3 @@
-interface IGeo {
-    region: string
-    position: string
-    placename: string
-}
-
 interface IArticle {
     author: string
     section: string
@@ -46,7 +40,6 @@ interface IOpenGraph {
 }
 
 export {
-    IGeo,
     ITwitter,
     IArticle,
     IGeneral,

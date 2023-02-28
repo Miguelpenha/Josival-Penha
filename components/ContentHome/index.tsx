@@ -2,6 +2,7 @@ import { Container } from './style'
 import Image from 'next/image'
 import photoMain from '../../public/img/photos/Photo-Principal.webp'
 import photoAnimation from '../../public/img/Photo-Animation.webp'
+import Form from './Form'
 import iconWhatsapp from '../../public/img/icons/whatsapp.svg'
 import photoObjectiveMain from '../../public/img/photos/Photo-Main.png'
 import wavesBackground from '../../public/img/Waves Background.svg'
@@ -43,28 +44,7 @@ function ContentHome() {
                     </a>
                 </div>
             </section>
-            <section id="form-contact" className="show">
-                <form id="form" action={process.env.NEXT_PUBLIC_URL_FORM} method="post">
-                    <h2 className="title">AGENDE <br/>UMA VISITA</h2>
-                    <input type="hidden" name="redirectTo" value={`${process.env.NEXT_PUBLIC_DOMAIN}/#success`}/>
-                    <input type="text" name="honeypot" style={{display: 'none'}}/>
-                    <input type="hidden" name="$site" id="site" value="Josival Penha"/>
-                    <input type="hidden" name="accessKey" value={process.env.NEXT_PUBLIC_ACCESS_KEY_FORM}/>
-                    <div className="field">
-                        <label htmlFor="name">Nome do responsável</label>
-                        <input type="text" name="$name" id="name" required/> 
-                    </div>
-                    <div className="field">
-                        <label htmlFor="tel">Celular (whatsapp)</label>
-                        <input type="tel" name="$tel" id="tel" required/> 
-                    </div>
-                    <div className="field">
-                        <label htmlFor="email">E-mail</label>
-                        <input type="email" name="$email" id="email" required/> 
-                    </div>
-                    <button className="button" type="submit">ENVIAR AGORA</button>
-                </form>
-            </section>
+            <Form/>
             <section className="objective">
                 <a href="https://api.whatsapp.com/send?phone=558141091419" className="button-whatsapp">
                     <Image src={iconWhatsapp} alt="Ícone do whatsApp"/>

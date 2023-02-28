@@ -73,10 +73,6 @@ export const Container = styled.main`
         display: none;
     }
 
-    #form-contact {
-        display: none;
-    }
-
     .objective {
         display: flex;
         margin-top: 10%;
@@ -680,81 +676,6 @@ export const Container = styled.main`
             width: 4vw;
             fill: ${props => props.theme.secondary};
             margin-left: 5%;
-        }
-
-        #form-contact {
-            top: 80%;
-            width: 35%;
-            right: 10%;
-            display: flex;
-            padding-top: 12%;
-            position: absolute;
-        }
-        
-        #form-contact>#form {
-            width: 80%;
-            padding: 5%;
-            display: flex;
-            align-self: center;
-            margin-bottom: 10%;
-            border-radius: 20px;
-            background-color: ${props => props.theme.primary};
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        
-        #form-contact>#form>.title {
-            width: 85%;
-            margin-top: 5%;
-            color: ${props => props.theme.colorSecondary};
-            font-weight: 800;
-            font-size: 2.2rem;
-            margin-bottom: 8%;
-            text-align: center;
-            align-self: center;
-        }
-        
-        #form-contact>#form>.field {
-            display: flex;
-            margin-top: 5%;
-        }
-        
-        #form-contact>#form>.field>label {
-            color: ${props => props.theme.backgroundColor};
-            font-weight: bold;
-            margin-bottom: 2%;
-            font-size: 1.03rem;
-        }
-        
-        #form-contact>#form>.field>input {
-            padding: 4%;
-            border: none;
-            font-weight: bold;
-            font-size: 1.12rem;
-            color: ${props => props.theme.primary};
-        }
-        
-        #form-contact>#form>.field>input:focus {
-            outline: none;
-        }
-        
-        #form-contact>#form>.button {
-            border: none;
-            display: flex;
-            padding: 6% 5%;
-            margin-top: 10%;
-            cursor: pointer;
-            color: ${props => props.theme.colorSecondary};
-            font-weight: bold;
-            font-size: 1.61rem;
-            border-radius: 20px;
-            align-items: center;
-            transition-duration: 0.1s;
-            background-color: ${props => props.theme.secondary};
-            transition-timing-function: linear;
-        }
-        
-        #form-contact>#form>.button:hover {
-            filter: brightness(0.9);
         }
 
         .objective {
