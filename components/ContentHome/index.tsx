@@ -8,13 +8,9 @@ import photoObjectiveMain from '../../public/img/photos/Photo-Main.png'
 import wavesBackground from '../../public/img/Waves Background.svg'
 import photo1 from '../../public/img/photos/Photo-1.png'
 import photo2 from '../../public/img/photos/Photo-2.png'
-import photo3 from '../../public/img/photos/Photo-3.jpg'
-import photo4 from '../../public/img/photos/Photo-4.jpg'
-import photo5 from '../../public/img/photos/Photo-5.jpg'
-import photo6 from '../../public/img/photos/Photo-6.jpg'
-import photo7 from '../../public/img/photos/Photo-7.jpg'
-import photo8 from '../../public/img/photos/Photo-8.jpg'
-import artsBackground from '../../public/img/Arts Background.svg'
+import Cards from './Cards'
+import Gallery from './Gallery'
+import Opportunity from './Opportunity'
 
 function ContentHome() {
     return (
@@ -153,59 +149,9 @@ function ContentHome() {
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=558141091419" className="button">quero conhecer</a>
             </section>
-            <section className="cards">
-                <ul className="list">
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                    <li className="card">
-                        <h3 className="title">Lorem ipsum dolor</h3>
-                        <span className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consectetur voluptas asperiores cum placeat tempora animi nihil, rem atque! Optio a aliquam odit magni, hic eius perferendis alias veniam dolor?</span>
-                    </li>
-                </ul>
-            </section>
-            <section className="gallery">
-                <h2 className="title">FORMAÇÃO INTELECTUAL E HUMANA EM VIVÊNCIAS QUE <span className="highlighted">SÓ NOSSOS ALUNOS CONHECEM</span></h2>
-                <div className="photos">
-                    <Image src={photo3} className="show" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photo4} className="show" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photo5} className="show" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photo6} className="show" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photo7} className="show" alt="Foto de alunos do Josival Penha"/>
-                    <Image src={photo8} className="show" alt="Foto de alunos do Josival Penha"/>
-                </div>
-            </section>
-            <section className="opportunity">
-                <Image src={artsBackground} alt="Fundo com artes"/>
-                <h2 className="title">EDUCAÇÃO DE VALOR</h2>
-                <span className="description">Não perca a oportunidade de proporcionar ao seu filho experiências e vivências de uma educação inovadora, que visa o desenvolvimento emocional e de alta performance acadêmica.</span>
-                <a href="https://api.whatsapp.com/send?phone=558141091419" className="button">agendar uma visita</a>
-            </section>
+            <Cards/>
+            <Gallery/>
+            <Opportunity/>
             <div className="mapouter"><div className="gmap_canvas"><iframe title="Google Maps" width="100%" height="400vh" id="gmap_canvas" src="https://maps.google.com/maps?q=Instituto%20Educacional%20Josival%20Penha&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe></div></div>
         </Container>
     )
