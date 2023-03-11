@@ -1,4 +1,4 @@
-import IBlog from '../../../types/blog'
+import IBlog from '../../../../types/blog'
 import { IArticle } from '../type'
 
 function useArticle(blog: IBlog): IArticle {

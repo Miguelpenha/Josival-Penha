@@ -1,4 +1,4 @@
-import HeadBlogHome from '../../components/HeadBlogHome'
+import HeadBlogHome from '../../components/heads/BlogHome'
 import Header from '../../components/Header'
 import { Container, Title, BlogList } from '../../styles/pages/blog'
 import blogs from '../../services/blogs'

@@ -1,4 +1,4 @@
-import IBlog from '../../../types/blog'
+import IBlog from '../../../../types/blog'
 import { FC } from 'react'
 import useOpenGraph from './useOpenGraph'
 import Head from 'next/head'

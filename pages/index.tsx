@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import reveal from '../components/reveal'
-import HeadHome from '../components/HeadHome'
+import HeadHome from '../components/heads/Home'
 import GoogleTagManager from '../components/GoogleTagManager'
 import Header from '../components/Header'
 import ContentHome from '../components/ContentHome'

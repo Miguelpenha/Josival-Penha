@@ -1,5 +1,5 @@
-import IBlog from '../../../types/blog'
-import { IGeneral } from '../type'
+import IBlog from '../../../../types/blog'
+import { IGeneral } from '../../types'
 import { useTheme } from 'styled-components'
 
 function useGeneral(blog: IBlog): IGeneral {

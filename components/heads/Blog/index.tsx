@@ -1,4 +1,4 @@
-import IBlog from '../../types/blog'
+import IBlog from '../../../types/blog'
 import { FC } from 'react'
 import Twitter from './Twitter'
 import General from './General'

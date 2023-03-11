@@ -1,5 +1,5 @@
-import IBlog from '../../../types/blog'
-import { ITwitter } from '../type'
+import IBlog from '../../../../types/blog'
+import { ITwitter } from '../../types'
 
 function useTwitter(blog: IBlog): ITwitter {
     return {

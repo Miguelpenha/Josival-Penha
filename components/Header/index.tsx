@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Container, Logo, NavBar, Option } from './style'
+import { Container, ContainerLogo, Logo, NavBar, Option } from './style'
 import logoJP from '../../public/img/Logo Josival Penha.svg'
 
 interface IProps {
@@ -10,7 +10,9 @@ interface IProps {
 const Header: FC<IProps> = ({ priorityLogo, page }) => {
     return (
         <Container>
-            <Logo priority={priorityLogo} src={logoJP} alt="Logo Josival Penha"/>
+            <ContainerLogo href="/">
+                <Logo priority={priorityLogo} src={logoJP} alt="Logo Josival Penha"/>
+            </ContainerLogo>
             <NavBar>
                 <Option href="/" select={page === 'home' ? 'true' : 'false'}>Início</Option>
                 <Option href="/blog" select={page === 'blog' ? 'true' : 'false'}>Blog</Option>

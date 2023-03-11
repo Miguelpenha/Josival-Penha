@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Container = styled.header`
     display: flex;
@@ -14,17 +14,20 @@ export const Container = styled.header`
     }
 `
 
-export const Logo = styled(Image)`
+export const ContainerLogo = styled(Link)`
     width: 65%;
-    height: auto;
-    margin-top: auto;
+    display: flex;
     align-self: center;
-    margin-bottom: auto;
 
     @media screen and (min-width: 900px) {
         width: 15%;
         align-self: flex-start;
     }
+`
+
+export const Logo = styled(Image)`
+    width: 100%;
+    height: auto;
 `
 
 export const NavBar = styled.nav`

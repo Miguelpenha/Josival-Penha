@@ -1,5 +1,5 @@
-import IBlog from '../../../types/blog'
-import { IOpenGraph } from '../type'
+import IBlog from '../../../../types/blog'
+import { IOpenGraph } from '../../types'
 
 function useOpenGraph(blog: IBlog): IOpenGraph {
     return {

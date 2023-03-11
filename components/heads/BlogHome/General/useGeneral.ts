@@ -1,4 +1,4 @@
-import { IGeneral } from '../type'
+import { IGeneral } from '../../types'
 import { useTheme } from 'styled-components'
 
 function useGeneral(): IGeneral {

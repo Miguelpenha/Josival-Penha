@@ -1,4 +1,4 @@
-import { IOpenGraph } from '../type'
+import { IOpenGraph } from '../../types'
 
 const openGraph: IOpenGraph = {
     type: 'blog',

@@ -1,4 +1,4 @@
-import { ITwitter } from '../type'
+import { ITwitter } from '../../types'
 
 const twitter: ITwitter = {
     card: 'summary_large_image',
