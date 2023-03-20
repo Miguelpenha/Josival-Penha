@@ -5,8 +5,8 @@ function Cards() {
     return (
         <Container>
             <List>
-                {cards.map(card => (
-                    <Card>
+                {cards.map((card, key) => (
+                    <Card key={key}>
                         <TitleCard>{card.title}</TitleCard>
                         <TextCard>{card.text}</TextCard>
                     </Card>
