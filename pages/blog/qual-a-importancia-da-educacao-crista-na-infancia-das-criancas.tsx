@@ -1,6 +1,6 @@
+import blogs from '../../services/blogs'
 import HeadBlog from '../../components/heads/Blog'
 import BlogPage from '../../components/BlogPage'
-import blogs from '../../services/blogs'
 import { Text } from '../../styles/pages/blog/blog'
 
 function Blog() {
