@@ -4,10 +4,10 @@ import photoAuthor1 from '../public/img/blog/Authors/Author 1.jpg'
 
 const blogs: IBlog[] = [
     {
-        date: '26/02/2023',
-        slug: 'qual-a-importancia-da-educacao-crista-na-infancia-das-criancas',
-        title: 'Qual a importância da educação cristã na infância das crianças?',
-        description: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica',
+        date: '26/03/2023',
+        slug: 'como-escolher-a-escola-ideal-para-o-seu-filho-em-paulista',
+        title: 'Como escolher a escola ideal para o seu filho em Paulista?',
+        description: 'Dicas e orientações para garantir uma educação completa e acolhedora.',
         image: {
             src: photoBlog1,
             name: 'img/blog/Photo 1.png',
