@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from '../styles/theme'
 import HeadGlobal from '../components/heads/Global'
 import GlobalStyle from '../styles/global'
+import { Analytics } from '@vercel/analytics/react'
 
 const TemplateRestaurant: FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -11,6 +12,7 @@ const TemplateRestaurant: FC<AppProps> = ({ Component, pageProps }) => {
       <HeadGlobal/>
       <Component {...pageProps}/>
       <GlobalStyle/>
+      <Analytics/>
     </ThemeProvider>
   )
 }
