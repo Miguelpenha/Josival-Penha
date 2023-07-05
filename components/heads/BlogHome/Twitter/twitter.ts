@@ -5,7 +5,7 @@ const twitter: ITwitter = {
     url: `${process.env.NEXT_PUBLIC_DOMAIN}/blog`,
     title: 'Blog - Instituto Educacional Josival Penha',
     description: 'Blog do Instituto Educacional Josival Penha',
-    image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/photos/Photo-Principal.webp`
+    image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/thumbnail.png`
 }
 
 export default twitter
