@@ -21,6 +21,8 @@ export const ContainerLogo = styled(Link)`
 
     @media screen and (min-width: 900px) {
         width: 15%;
+        margin: auto;
+        margin-left: 0%;
         align-self: flex-start;
     }
 `
@@ -31,13 +33,30 @@ export const Logo = styled(Image)`
 `
 
 export const NavBar = styled.nav`
-    display: none;
-    margin-right: 17%;
+    display: flex;
+    margin-right: 25%;
     margin-left: auto;
     flex-direction: row;
 
-    @media screen and (min-width: 900px) {
-        display: flex;
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 5%;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        justify-content: space-between;
+        scrollbar-color: transparent transparent;
     }
 `
 
@@ -62,5 +81,11 @@ export const Option = styled(Link)<IOption>`
 
     :hover {
         border-bottom: 2px solid ${props => props.theme.backgroundColor};
+    }
+
+    @media screen and (max-width: 900px) {
+        margin: 0% 5%;
+        padding: 2% 0%;
+        font-size: 1.5em;
     }
 `
