@@ -6,6 +6,11 @@ export const Container = styled.article`
     margin: auto;
     display: flex;
     margin-bottom: 8em;
+
+    a {
+        color: ${props => props.theme.primary};
+        text-decoration: underline ${props => props.theme.primary};
+    }
 `
 
 export const Header = styled.header`
@@ -66,4 +71,6 @@ export const Image = styled(ImageRaw)`
     height: auto;
     margin-top: 2em;
     margin-bottom: 1em;
+    align-self: center;
+    border-radius: 10px;
 `

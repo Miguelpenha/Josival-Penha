@@ -17,6 +17,7 @@ export const Container = styled(Link)`
 export const Image = styled(ImageRaw)`
     width: 100%;
     height: auto;
+    border-radius: 10px;
 `
 
 export const Title = styled.h2`

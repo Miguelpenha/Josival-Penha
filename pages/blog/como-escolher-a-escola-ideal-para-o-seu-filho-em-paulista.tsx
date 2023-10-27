@@ -19,7 +19,7 @@ function Blog() {
                 <Text>Considere a reputação da escola e as experiências de outros pais e alunos. Converse com pessoas que já tiveram experiências na escola e busque avaliações online.</Text>
                 <Text>Lembre-se que escolher a escola certa para o seu filho é uma decisão importante, que pode impactar na formação dele como indivíduo. Por isso, invista um tempo para pesquisar e escolher com calma.</Text>
                 <Text>Se você está procurando uma escola em Mirueira que ofereça um ambiente acolhedor, com profissionais capacitados e valores sólidos, o Instituto Educacional Josival Penha é a escolha certa. Aqui, seu filho encontrará uma educação completa, que valoriza tanto o aprendizado quanto o desenvolvimento emocional e social. Com uma equipe dedicada e comprometida em proporcionar o melhor para cada aluno, o Josival Penha é mais que uma escola, é uma família que acolhe e cuida de cada um dos seus pequenos.</Text>
-                <Text>Esperamos ter ajudado você a escolher a melhor escola para o seu filho em Paulista! E se quiser conhecer mais sobre o Instituto Educacional Josival Penha, entre em contato conosco pelo WhatsApp: (XX) XXXXX-XXXX. Será um prazer receber você e sua família em nossa escola.</Text>
+                <Text>Esperamos ter ajudado você a escolher a melhor escola para o seu filho em Paulista! E se quiser conhecer mais sobre o Instituto Educacional Josival Penha, entre em contato conosco pelo WhatsApp: <a href='tel:+5581994997501'>(81) 99499-7501</a>. Será um prazer receber você e sua família em nossa escola.</Text>
             </BlogPage>
         </>
     )
