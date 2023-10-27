@@ -1,16 +1,11 @@
-import IBlog from '../../types/blog'
-import { FC } from 'react'
+import blogs from '../../services/blogs'
 import HeadBlog from '../../components/heads/Blog'
 import BlogPage from '../../components/BlogPage'
 import { Text, SubTitle } from '../../styles/pages/blog/blog'
-import { GetServerSideProps } from 'next'
-import blogs from '../../services/blogs'
 
-interface IProps {
-    blog: IBlog
-}
+function Blog() {
+    const blog = blogs[0]
 
-const Blog: FC<IProps> = ({ blog }) => {
     return (
         <>
             <HeadBlog blog={blog}/>
@@ -28,12 +23,6 @@ const Blog: FC<IProps> = ({ blog }) => {
             </BlogPage>
         </>
     )
-}
-
-export const getServerSideProps: GetServerSideProps<IProps> = async () => {
-    const blog = blogs[0]
-
-    return { props: { blog } }
 }
 
 export default Blog

@@ -7,7 +7,7 @@ function useTwitter(blog: IBlog): ITwitter {
         card: 'summary_large_image',
         description: blog.description,
         url: `${process.env.NEXT_PUBLIC_DOMAIN}/blog/${blog.slug}`,
-        image:`${process.env.NEXT_PUBLIC_DOMAIN}/${blog.image.name}`
+        image: `${process.env.NEXT_PUBLIC_DOMAIN}/img/thumbnail.png`
     }
 }
 
