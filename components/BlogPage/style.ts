@@ -2,10 +2,14 @@ import styled from 'styled-components'
 import ImageRaw from 'next/image'
 
 export const Container = styled.article`
-    width: 80%;
+    width: 50em;
     margin: auto;
     display: flex;
     margin-bottom: 8em;
+
+    @media screen and (max-width: 950px) {
+        width: 85%;
+    }
 
     a {
         color: ${props => props.theme.primary};
