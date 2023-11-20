@@ -75,14 +75,23 @@ export const Container = styled.main`
 
     .objective {
         display: flex;
-        margin-top: 10%;
     }
 
-    .objective>.button-whatsapp {
+    .objective>.container {
+        bottom: 0%;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        padding: 4% 0%;
+        position: fixed;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .objective>.container>.button-whatsapp {
         width: 80%;
         padding: 4%;
         display: flex;
-        align-self: center;
         align-items: center;
         flex-direction: row;
         border-radius: 40px;
@@ -93,16 +102,16 @@ export const Container = styled.main`
         transition-timing-function: linear;
     }
 
-    .objective>.button-whatsapp:hover {
+    .objective>.container>.button-whatsapp:hover {
         filter: brightness(0.9);
     }
 
-    .objective>.button-whatsapp>img {
+    .objective>.container>.button-whatsapp>img {
         width: 6.1vw;
         height: 6.1vw;
     }
 
-    .objective>.button-whatsapp>span {
+    .objective>.container>.button-whatsapp>span {
         font-size: 4vw;
         color: ${props => props.theme.backgroundColor};
         padding-left: 5%;
@@ -113,7 +122,7 @@ export const Container = styled.main`
         width: 70%;
         z-index: -1;
         height: auto;
-        margin-top: 10%;
+        margin-top: 5%;
         align-self: center;
     }
 
@@ -121,13 +130,13 @@ export const Container = styled.main`
         width: 100%;
         z-index: -1;
         height: auto;
-        margin-top: 114%;
+        margin-top: 90%;
         position: absolute;
     }
 
     .objective>.container-description {
         display: flex;
-        margin-top: 0%;
+        margin-bottom: 5%;
     }
 
     .objective>.container-description>.title {
@@ -525,7 +534,7 @@ export const Container = styled.main`
             margin-bottom: -6.5%;
         }
 
-        .objective>.button-whatsapp {
+        .objective>.container {
             display: none;
         }
 
