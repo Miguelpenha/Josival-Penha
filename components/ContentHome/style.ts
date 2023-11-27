@@ -92,6 +92,7 @@ export const Container = styled.main`
         width: 80%;
         padding: 4%;
         display: flex;
+        text-align: center;
         align-items: center;
         flex-direction: row;
         border-radius: 40px;
