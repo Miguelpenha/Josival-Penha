@@ -9,7 +9,7 @@ interface IProps {
 const Blog: FC<IProps> = ({ blog }) => {
     return (
         <Container href={`blog/${blog.slug}`}>
-            <Image priority src={blog.image.src} alt={blog.image.alt}/>
+            <Image placeholder="blur" priority src={blog.image.src} alt={blog.image.alt}/>
             <Title>{blog.title}</Title>
             <More>Ler o post</More>
         </Container>

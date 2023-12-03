@@ -26,7 +26,7 @@ const BlogPage: FC<IProps> = ({ blog, children }) => {
                 <HeaderDefault page="blog"/>
                 <Container>
                     <Header>
-                        <PhotoAuthor src={blog.author.image.src} alt={blog.author.image.alt}/>
+                        <PhotoAuthor placeholder="blur" src={blog.author.image.src} alt={blog.author.image.alt}/>
                         <TextsHeader>
                             <Author>{blog.author.name}</Author>
                             <Date>{blog.date}</Date>
@@ -38,7 +38,7 @@ const BlogPage: FC<IProps> = ({ blog, children }) => {
                     </Header>
                     <Title>{blog.title}</Title>
                     <Description>{blog.description}</Description>
-                    <Image src={blog.image.src} alt={blog.image.alt}/>
+                    <Image placeholder="blur" src={blog.image.src} alt={blog.image.alt}/>
                     {children}
                 </Container>
                 <Footer/>

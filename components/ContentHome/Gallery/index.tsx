@@ -7,7 +7,7 @@ function Gallery() {
             <Title>FORMAÇÃO INTELECTUAL E HUMANA EM VIVÊNCIAS QUE <Highlighted>SÓ NOSSOS ALUNOS CONHECEM</Highlighted></Title>
             <Photos>
                 {images.map((image, index) => (
-                    <Image key={index} src={image} className="show" alt="Foto de alunos do Josival Penha"/>
+                    <Image placeholder="blur" key={index} src={image} className="show" alt="Foto de alunos do Josival Penha"/>
                 ))}
             </Photos>
         </Container>
