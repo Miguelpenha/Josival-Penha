@@ -5,6 +5,7 @@ import theme from '../styles/theme'
 import HeadGlobal from '../components/heads/Global'
 import GlobalStyle from '../styles/global'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const TemplateRestaurant: FC<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -13,6 +14,7 @@ const TemplateRestaurant: FC<AppProps> = ({ Component, pageProps }) => {
       <Component {...pageProps}/>
       <GlobalStyle/>
       <Analytics/>
+      <SpeedInsights/>
     </ThemeProvider>
   )
 }
