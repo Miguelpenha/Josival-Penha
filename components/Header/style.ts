@@ -38,6 +38,18 @@ export const NavBar = styled.nav`
     margin-left: auto;
     flex-direction: row;
 
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 4%;
+    }
+`
+
+export const ListOptions = styled.ul`
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+
     ::-webkit-scrollbar {
         width: 0px;
     }
@@ -51,12 +63,22 @@ export const NavBar = styled.nav`
     }
 
     @media screen and (max-width: 900px) {
-        width: 100%;
-        margin-top: 5%;
         overflow: auto;
         scroll-snap-type: x mandatory;
         justify-content: space-between;
         scrollbar-color: transparent transparent;
+    }
+`
+
+export const ContainerOption = styled.li`
+    margin: auto;
+    margin: 0% 8%;
+    display: flex;
+    list-style: none;
+    align-self: center;
+
+    @media screen and (max-width: 900px) {
+        margin: 5% 5%;
     }
 `
 
@@ -65,9 +87,8 @@ interface IOption {
 }
 
 export const Option = styled(Link)<IOption>`
-    margin: 0% 8%;
-    padding: 5% 0%;
-    align-self: center;
+    padding: 4%;
+    font-size: 1.1em;
     white-space: nowrap;
     text-decoration: none;
     transition-duration: 0.2s;
@@ -84,8 +105,7 @@ export const Option = styled(Link)<IOption>`
     }
 
     @media screen and (max-width: 900px) {
-        margin: 0% 5%;
-        padding: 2% 0%;
+        padding: 0% 0%;
         font-size: 1.5em;
     }
 `
