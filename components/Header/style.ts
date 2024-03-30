@@ -3,9 +3,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const Container = styled.header`
+    opacity: 0;
     display: flex;
     padding: 3.8%;
     flex-direction: column;
+    transform: translateY(-70%);
     background-color: ${props => props.theme.primary};
 
     @media screen and (min-width: 900px) {

@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import useAnimation from './useAnimation'
 import { Container, ContainerLogo, Logo, NavBar, ListOptions, ContainerOption, Option } from './style'
 import logoJP from '../../public/img/Logo Josival Penha.svg'
 
@@ -8,8 +9,10 @@ interface IProps {
 }
 
 const Header: FC<IProps> = ({ priorityLogo, page }) => {
+    useAnimation()
+    
     return (
-        <Container>
+        <Container id="header">
             <ContainerLogo href="/">
                 <Logo priority={priorityLogo} src={logoJP} alt="Logo Josival Penha"/>
             </ContainerLogo>
