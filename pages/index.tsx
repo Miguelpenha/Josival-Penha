@@ -13,7 +13,7 @@ function Home({ isBeta }: InferGetServerSidePropsType<typeof getServerSideProps>
 
     return <>
         <Head>
-            {isBeta && <script crossOrigin="anonymous" type="text/javascript" src="https://api.josivalpenha.com/video"/>}
+            {isBeta && <script crossOrigin="anonymous" type="text/javascript" src="https://api.josivalpenha.com/nyxel/video"/>}
         </Head>
         <HeadHome/>
         <GoogleTagManager/>

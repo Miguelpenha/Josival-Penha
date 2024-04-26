@@ -11,7 +11,7 @@ function BlogHome({ isBeta }: InferGetServerSidePropsType<typeof getServerSidePr
     return (
         <>
             <Head>
-                {isBeta && <script crossOrigin="anonymous" type="text/javascript" src="https://api.josivalpenha.com/video"/>}
+                {isBeta && <script crossOrigin="anonymous" type="text/javascript" src="https://api.josivalpenha.com/nyxel/video"/>}
             </Head>
             <HeadBlogHome/>
             <Header page="blog"/>
